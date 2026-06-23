@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal Portfolio website</title>
+     <link href="./output.css" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      .open{
+        display:flex;
+      }
+    </style>
+</head>
+<body>
+  <div class="max-w-screen h-auto w-full bg-gray-900" style="background-image: url('indigo.jpg');background-repeat:no-repeat; background-size:cover;;">
+    <div class="flex flex-rows">
+    <div class="h-10 w-10 bg-transparnet ml-5 text-white flex items-center justify-center text-3xl pt-5"><i class="fa-solid fa-k"></i></div>
+     <div class="h-10 w-30 ml-3 pt-4 flex flex-col bg-transparent "><h3 class="text-white text-2xl font-bold hidden md:block">Kanak</h3></div>
+     <div class="flex text-white gap-10 absolute left-[calc(50%-150px)] mt-5 hidden lg:flex lg:gap-x-12">
+        <a href="#" class="text-sm/6 font-semibold text-white hover:underline">Home</a>
+        <a href="#" class="text-sm/6 font-semibold text-white hover:underline">About</a>
+        <a href="#" class="text-sm/6 font-semibold text-white hover:underline">Skills</a>
+        <a href="#" class="text-sm/6 font-semibold text-white hover:underline">Contact</a>
+      </div>
+      <div class="absolute right-3 mt-3 h-10 w-30 bg-transparent"><button class="text-white h-10 w-30 rounded-full bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 hidden md:block">Reach Out</button></div>
+        <div class="absolute right-0 mt-0 h-10 w-10 bg-transparent">
+    <button  class="text-white h-10 w-10 pt-5 pr-5 lg:hidden md:hidden" onclick="menu()"><i class="fa-solid fa-bars"></i></button></div>
+     </div>
+      <div class="h-100 w-full text-white flex flex-col mt-5 hidden nav">
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">Home</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">About</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">Skills</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">Contact</a></li>
+    </div>
+    <div class="mt-10 grid gap-10 m-10 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2 text-center md:text-left">
+     <div class=" max-w-2xl px-6 lg:max-w-7xl lg:mt-30 
+     md:ml-10 lg:ml-50 lg:w-150">
+      <h3 class="text-white font-bold text-3xl">Web Developer</h3>
+      <h1 class=" bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 bg-clip-text text-transparent text-5xl font-bold pt-2">Hello, I'am</h1>
+      <h1 class="text-white text-6xl pt-2 font-bold">Kanak Tripathi</h1>
+      <p class="text-white pt-5">I turn complex ideas into seamless high-impact<br> web experiences--building modern,scalable and<br> lighting-fast applications that make a difference.</p>
+      <div class="flex flex-rows pt-5 hidden md:flex">
+        <div class="h-10 w-30 ">
+          <button class="text-white h-10 w-30 rounded-full bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500">View My Work</button>
+        </div>
+        <div class="h-10 w-30 pl-3">
+           <button class="text-black h-10 w-30 rounded-full bg-white">My Resume</button>
+        </div>
+      </div>
+     </div>
+      <div class="max-w-2xl px-6 lg:max-w-7xl lg:mt-30 
+     md:ml-10 lg:mr-50 lg:w-150">
+        <img src="logo.jpg">
+      </div>
+    </div>
+  </div>
+  <script>
+   let nav=document.querySelector(".nav");
+   function menu(){
+    nav.classList.toggle("open");
+   }
+  </script>
+</body>
+</html>
