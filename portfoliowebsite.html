@@ -16,26 +16,27 @@
 </head>
 <body>
   <div class="max-w-screen h-auto w-full bg-gray-900" style="background-image: url('indigo.jpg');background-repeat:no-repeat; background-size:cover;;">
+    <div class="home">
     <div class="flex flex-rows">
     <div class="h-10 w-10 bg-transparnet ml-5 text-white flex items-center justify-center text-3xl pt-5"><i class="fa-solid fa-k"></i></div>
      <div class="h-10 w-30 ml-3 pt-4 flex flex-col bg-transparent "><h3 class="text-white text-2xl font-bold hidden md:block">Kanak</h3></div>
      <div class="flex text-white gap-10 absolute left-[calc(50%-150px)] mt-5 hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm/6 font-semibold text-white hover:underline">Home</a>
+        <a href="#" class="text-sm/6 font-semibold text-white hover:underline" onclick="home2()">Home</a>
         <a href="#" class="text-sm/6 font-semibold text-white hover:underline">About</a>
         <a href="#" class="text-sm/6 font-semibold text-white hover:underline">Skills</a>
         <a href="#" class="text-sm/6 font-semibold text-white hover:underline">Contact</a>
       </div>
-      <div class="absolute right-3 mt-3 h-10 w-30 bg-transparent"><button class="text-white h-10 w-30 rounded-full bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 hidden md:block">Reach Out</button></div>
+      <div class="absolute right-3 mt-3 h-10 w-30 bg-transparent"><button href="#" class="text-white flex items-center justify-center text-center h-10 w-30 rounded-full bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 hidden md:block">Reach Out</button></div>
         <div class="absolute right-0 mt-0 h-10 w-10 bg-transparent">
     <button  class="text-white h-10 w-10 pt-5 pr-5 lg:hidden md:hidden" onclick="menu()"><i class="fa-solid fa-bars"></i></button></div>
      </div>
       <div class="h-100 w-full text-white flex flex-col mt-5 hidden nav">
-        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">Home</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500" onclick="home()"><a href="#">Home</a></li>
         <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">About</a></li>
         <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">Skills</a></li>
         <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">Contact</a></li>
     </div>
-    <div class="mt-10 grid gap-10 m-10 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2 text-center md:text-left">
+    <div class="mt-10 grid gap-10 m-10 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2 text-center md:text-left home2">
      <div class=" max-w-2xl px-6 lg:max-w-7xl lg:mt-30 
      md:ml-10 lg:ml-50 lg:w-150">
       <h3 class="text-white font-bold text-3xl">Web Developer</h3>
@@ -56,9 +57,26 @@
         <img src="logo.jpg">
       </div>
     </div>
+    </div>
+    <hr>
+    <div class="about">
+      <div class="flex flex-cols items-center justify-center">
+        <div class="h-10 w-100 bg-black"></div>
+        <div class="h-10 w-100 bg-black"></div>
+        <div class="h-10 w-100 bg-black"></div>
+      </div>
+    </div>
   </div>
   <script>
    let nav=document.querySelector(".nav");
+   let h=document.querySelector(".home2");
+   function home2(){
+    h.style.display="grid";
+   }
+   function home(){
+    h.style.display="grid";
+    nav.classList.toggle("open");
+   }
    function menu(){
     nav.classList.toggle("open");
    }
