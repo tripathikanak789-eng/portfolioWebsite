@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills page</title>
+     <link href="./output.css" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <style>
+        .open{
+            display:flex;
+        }
+     </style>
+</head>
+<body>
+     <div class="max-w-screen h-auto w-full" style="background-image: url('images/indigo.jpg');background-repeat:no-repeat; background-size:cover ;;">
+        <div class="nav2">
+         <div class="flex flex-rows">
+    <div class="h-10 w-10 bg-transparnet ml-5 text-white flex items-center justify-center text-3xl pt-5"><i class="fa-solid fa-k"></i></div>
+     <div class="h-10 w-30 ml-3 pt-4 flex flex-col bg-transparent "><h3 class="text-white text-2xl font-bold hidden md:block">Kanak</h3></div>
+     <div class="flex text-white gap-10 absolute left-[calc(50%-150px)] mt-5 hidden lg:flex lg:gap-x-12">
+        <a href="homepage.html" class="text-sm/6 font-semibold text-white hover:underline">Home</a>
+        <a href="aboutpage.html" class="text-sm/6 font-semibold text-white hover:underline">About</a>
+        <a href="skills.html" class="text-sm/6 font-semibold text-white hover:underline">Skills</a>
+        <a href="#" class="text-sm/6 font-semibold hover:underline text-white">Contact</a>
+      </div>
+      <div class="absolute right-3 mt-3 h-10 w-30 bg-transparent"><button href="#" class="text-white flex items-center justify-center text-center h-10 w-30 rounded-full bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 hidden md:block">Reach Out</button></div>
+        <div class="absolute right-0 mt-0 h-10 w-10 bg-transparent">
+    <button  class="text-white h-10 w-10 pt-5 pr-5 lg:hidden md:hidden" onclick="menu()"><i class="fa-solid fa-bars"></i></button></div>
+     </div>
+      <div class="h-100 w-full text-white flex flex-col mt-5 hidden nav">
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="homepage.html">Home</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500" ><a href="aboutpage.html">About</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="skills.html">Skills</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">Contact</a></li>
+    </div>
+    <div class="skills">
+        <div class="h-auto w-full flex flex-col items-center justify-center mt-10">
+         <div class="h-auto w-100">
+            <h1 class=" text-center  bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 bg-clip-text text-transparent text-5xl font-bold pt-2">My Skills</h1>
+         </div>
+         <div class="h-10 w-100"><h4 class="text-white text-center">Modern Applications|Modern Technologies</h4></div>
+        </div>
+        <div class="h-auto w-auto flex items-center justify-center">
+        <div class="h-auto w-auto flex items-center flex-col md:flex-row gap-2">
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/logo2.png"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>HTML and CSS Fundamentals</h1></div>
+                </div>
+            </div>
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/javascript-logo.jpg"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Javascript Proficiency</h1></div>
+                </div>
+            </div>
+        </div>
+        </div>
+          <div class="h-auto w-auto flex items-center justify-center mt-2">
+        <div class="h-auto w-auto flex items-center flex-col md:flex-row gap-2">
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/tailwind-logo.jpg"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Tailwind CSS</h1></div>
+                </div>
+            </div>
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/data.png"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Database Management</h1></div>
+                </div>
+            </div>
+        </div>
+        </div>
+          <div class="h-auto w-auto flex items-center justify-center mt-2">
+        <div class="h-auto w-auto flex items-center flex-col md:flex-row gap-2">
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/web.png"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Web Performance Optimization</h1></div>
+                </div>
+            </div>
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/softskills.png"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Soft Skills and communication</h1></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script>
+         let nav=document.querySelector(".nav");
+        
+          function menu(){
+              console.log(nav);
+    nav.classList.toggle("open");
+   }
+    </script>
+</body>
+</html>
