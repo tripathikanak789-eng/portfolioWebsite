@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-  <div class="max-w-screen h-screen w-full bg-gray-900 overflow-hidden" style="background-image: url('images/indigo.jpg');background-repeat:no-repeat; background-size:cover;;">
+  <div class="max-w-screen h-auto w-full bg-gray-900" style="background-image: url('images/indigo.jpg');background-repeat:no-repeat; background-size:cover;;">
     <div class="home">
     <div class="flex flex-rows">
     <div class="h-10 w-10 bg-transparnet ml-5 text-white flex items-center justify-center text-3xl pt-5"><i class="fa-solid fa-k"></i></div>
@@ -24,9 +24,9 @@
         <a href="homepage.html" class="text-sm/6 font-semibold text-white hover:underline">Home</a>
         <a href="aboutpage.html" class="text-sm/6 font-semibold text-white hover:underline">About</a>
         <a href="skills.html" class="text-sm/6 font-semibold text-white hover:underline">Skills</a>
-        <a href="#" class="text-sm/6 font-semibold text-white hover:underline">Contact</a>
+        <a href="contact.html" class="text-sm/6 font-semibold text-white hover:underline">Contact</a>
       </div>
-      <div class="absolute right-3 mt-3 h-10 w-30 bg-transparent"><button href="#" class="text-white flex items-center justify-center text-center h-10 w-30 rounded-full bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 hidden md:block">Reach Out</button></div>
+      <div class="absolute right-3 mt-3 h-10 w-30 bg-transparent"><button onclick="window.location.href='http://127.0.0.1:5500/contact.html'" class="text-white flex items-center justify-center text-center h-10 w-30 rounded-full bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 hidden md:block">Reach Out</button></div>
         <div class="absolute right-0 mt-0 h-10 w-10 bg-transparent">
     <button  class="text-white h-10 w-10 pt-5 pr-5 lg:hidden md:hidden" onclick="menu()"><i class="fa-solid fa-bars"></i></button></div>
      </div>
@@ -34,7 +34,7 @@
         <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="homepage.html">Home</a></li>
         <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500" ><a href="aboutpage.html">About</a></li>
         <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="skills.html">Skills</a></li>
-        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="#">Contact</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="contact.html">Contact</a></li>
     </div>
     <div class="mt-10 grid gap-10 m-10 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2 text-center md:text-left home2">
      <div class=" max-w-2xl px-6 lg:max-w-7xl lg:mt-30 
@@ -58,10 +58,10 @@
       </div>
     </div>
     </div>
-    <div class="h-auto w-auto  bg-[rgba(255,255,255,0.3)] border-3 border-white border-b-transparent rounded-lg m-3 about hidden">
+    <div class="h-auto w-auto  bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg m-3 about">
       <div class="flex flex-col  gap-0 items-center justify-center m-2">
        <div class="h-auto w-auto flex items-center flex-col md:flex-row gap-0">
-        <div class="h-40 w-40 bg-white m-3 rounded-lg"></div>
+        <div class="h-40 w-40 bg-white m-3 rounded-lg"><img class="rounded-lg" src="images/mephoto.jpeg"/></div>
         <div class="h-auto w-auto text-white m-3">
           <h1 class="text-3xl font-bold  bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 bg-clip-text text-transparent text-5xl font-bold pt-2">Kanak Tripathi</h1>
           <h1 class="text-white pl-1">Web Developer</h1>
@@ -102,6 +102,112 @@
           </div>
       </div>
     </div>
+     <div class="skills">
+        <div class="h-auto w-full flex flex-col items-center justify-center mt-10">
+         <div class="h-auto w-100">
+            <h1 class=" text-center  bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 bg-clip-text text-transparent text-5xl font-bold pt-2">My Skills</h1>
+         </div>
+         <div class="h-10 w-100"><h4 class="text-white text-center">Modern Applications|Modern Technologies</h4></div>
+        </div>
+        <div class="h-auto w-auto flex items-center justify-center">
+        <div class="h-auto w-auto flex items-center flex-col md:flex-row gap-2">
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/logo2.png"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>HTML and CSS Fundamentals</h1></div>
+                </div>
+            </div>
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/javascript-logo.jpg"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Javascript Proficiency</h1></div>
+                </div>
+            </div>
+        </div>
+        </div>
+          <div class="h-auto w-auto flex items-center justify-center mt-2">
+        <div class="h-auto w-auto flex items-center flex-col md:flex-row gap-2">
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/tailwind-logo.jpg"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Tailwind CSS</h1></div>
+                </div>
+            </div>
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/data.png"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Database Management</h1></div>
+                </div>
+            </div>
+        </div>
+        </div>
+          <div class="h-auto w-auto flex items-center justify-center mt-2">
+        <div class="h-auto w-auto flex items-center flex-col md:flex-row gap-2">
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/web.png"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Web Performance Optimization</h1></div>
+                </div>
+            </div>
+            <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg">
+                <div class="flex flex-col">
+                    <div class="h-auto w-100 flex items-center justify-center">
+                    <div class="h-30 w-30 bg-white mt-10 mb-10"><img src="images/softskills.png"/></div>
+                     </div>
+                     <div class="text-white lg:text-gray-500 text-center"><h1>Soft Skills and communication</h1></div>
+                </div>
+            </div>
+        </div>
+        </div>
+         <div class="contact">
+        <div class="h-screen w-auto flex items-center justify-center mt-0">
+        <div class="flex flex-col md:flex-row gap-10 md:gap-50">
+            <div class="h-auto w-100 mt-30 lg:mt-10 "><img src="images/robo2.png"/></div>
+             <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg p-3">
+               <h1>Let's work Together</h1>
+               <form action="" onsubmit="sendMail()">
+                <label for="" class="text-gray-500 ">Your Name</label><br>
+                <input type="text" id="name" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Name" required/>
+                  <label for="" class="text-gray-500 ">Your Email</label><br>
+                <input type="text" id="email" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Email" id="email" required/>
+                <label for=""  class="text-gray-500">Service needed</label><br>
+                <select id="select" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:border-none focus:outline-none text-gray-500">
+                    <option>Something in mind</option>
+                    <option>Web Development</option>
+                    <option>Mobile application</option>
+                    <option>others</option>
+                </select>
+                  <label for="" class="text-gray-500 ">Explain Your idea</label><br>
+                <textarea id="message" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-20 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none " placeholder="Explain your idea.." required></textarea>
+                <button type="submit" onclick="sendMail()" class="text-white h-10 bg-[purple] w-full rounded-lg">Send Message</button>
+               </form>
+             </div>
+             </div>
+        </div>
+        <div class="footer h-auto w-auto flex items-center justify-center">
+          <div class="flex-col h-auto w-auto flex items-center justify-center">
+            <div class="h-auto w-auto bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 bg-clip-text text-transparent text-5xl font-bold pt-2 text-5xl lg:text-8xl">Kanak Tripathi</div>
+            <hr color="gray">
+            <div class="flex flex-row  h-10 w-50 mt-3">
+              <div class="text-white h-10 w-10 text-center text-2xl"><a href="https://www.youtube.com/@KanakTripathiofficial-f8p" ><i class="fa-brands fa-youtube"></i></a></div>
+               <div class="text-white h-10 w-10 text-center text-2xl"><a href="https://www.instagram.com/srpk154?utm_source=qr&igsh=MTluMndnN2Q3cDluMg%3D%3D" ><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="text-white h-10 w-10 text-center text-2xl"><a href="https://www.linkedin.com/feed/" ><i class="fa-brands fa-linkedin-in"></i></a></div>
+                <div class="text-white h-10 w-10 text-center text-2xl"><a href="https://github.com/tripathikanak789-eng/portfolioWebsite.git" > <i class="fa-brands fa-github"></i></a></div>
+            </div>
+            <div ><h4 class="text-md text-white">"Success is when preparation meets opportunity"</h4></div>
+            <div class="mt-5 mb-5"><h4 class="text-xs text-white">© 2026 kanak tripathi. All rights reserved.</h4></div>
+          </div>
+        </div>
   </div>
   <script>
    let nav=document.querySelector(".nav");
