@@ -53,20 +53,20 @@
             <div class="h-auto w-100 mt-30 lg:mt-10 "><img src="images/robo2.png"/></div>
              <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg p-3">
                <h1>Let's work Together</h1>
-               <form action="" onsubmit="sendMail()">
+               <form  action="https://formsubmit.co/51ff8d75a987eb688a5cf42cc2bbae6c" method="POST">
                 <label for="" class="text-gray-500 ">Your Name</label><br>
-                <input type="text" id="name" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Name" required/>
+                <input type="text" name="name" id="name" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Name" required/>
                   <label for="" class="text-gray-500 ">Your Email</label><br>
-                <input type="text" id="email" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Email" id="email" required/>
+                <input type="text" name="email" id="email" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Email" id="email" required/>
                 <label for=""  class="text-gray-500">Service needed</label><br>
-                <select id="select" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:border-none focus:outline-none text-gray-500">
+                <select id="select" name="select" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:border-none focus:outline-none text-gray-500">
                     <option>Something in mind</option>
                     <option>Web Development</option>
                     <option>Mobile application</option>
                     <option>others</option>
                 </select>
                   <label for="" class="text-gray-500 ">Explain Your idea</label><br>
-                <textarea id="message" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-20 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none " placeholder="Explain your idea.." required></textarea>
+                <textarea id="message" name="message" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-20 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none " placeholder="Explain your idea.." required></textarea>
                 <button type="submit" onclick="sendMail()" class="text-white h-10 bg-[purple] w-full rounded-lg">Send Message</button>
                </form>
              </div>
@@ -82,17 +82,6 @@
               console.log(nav);
     nav.classList.toggle("open");
    }
-       function sendMail(){
-       const Params={
-        name:document.getElementById("name").value,
-        email:document.getElementById("email").value,
-        select:document.getElementById("select").value,
-        message:document.getElementById("message").value
-       }
-       console.log(Params);
-       //send email using email.js
-       emailjs.send("service_dubmf7h","template_2yjppoi",Params,"Bk_m_oCLjiUKSPpiJ").then(alert("Email sent successfully"));
-    }
     </script>
 </body>
 </html>
