@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Bk_m_oCLjiUKSPpiJ",
+      });
+   })();
+</script>
+<style>
+  .open{
+    display:flex;
+  }
+</style>
+</head>
+<body>
+     <div class="max-w-screen h-auto w-full" style="background-image: url('images/indigo.jpg');background-repeat:no-repeat; background-size:cover ;;">
+        <div class="nav2">
+         <div class="flex flex-rows">
+    <div class="h-10 w-10 bg-transparnet ml-5 text-white flex items-center justify-center text-3xl pt-5"><i class="fa-solid fa-k"></i></div>
+     <div class="h-10 w-30 ml-3 pt-4 flex flex-col bg-transparent "><h3 class="text-white text-2xl font-bold hidden md:block">Kanak</h3></div>
+     <div class="flex text-white gap-10 absolute left-[calc(50%-150px)] mt-5 hidden lg:flex lg:gap-x-12">
+        <a href="homepage.html" class="text-sm/6 font-semibold text-white hover:underline">Home</a>
+        <a href="aboutpage.html" class="text-sm/6 font-semibold text-white hover:underline">About</a>
+        <a href="skills.html" class="text-sm/6 font-semibold text-white hover:underline">Skills</a>
+        <a href="contact.html" class="text-sm/6 font-semibold hover:underline text-white">Contact</a>
+      </div>
+      <div class="absolute right-3 mt-3 h-10 w-30 bg-transparent"><button onclick="window.location.href='http://127.0.0.1:5500/contact.html'" class="text-white flex items-center justify-center text-center h-10 w-30 rounded-full bg-gradient-to-r from-purple-700 via-white-500 to-indigo-500 hidden md:block">Reach Out</button></div>
+        <div class="absolute right-0 mt-0 h-10 w-10 bg-transparent">
+    <button  class="text-white h-10 w-10 pt-5 pr-5 lg:hidden md:hidden" onclick="menu()"><i class="fa-solid fa-bars"></i></button></div>
+     </div>
+      <div class="h-100 w-full text-white flex flex-col mt-5 hidden nav">
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="homepage.html">Home</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500" ><a href="aboutpage.html">About</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="skills.html">Skills</a></li>
+        <li class="font-semibold h-10 w-full flex items-center px-7 hover:bg-gray-500"><a href="contact.html">Contact</a></li>
+    </div>
+    </div>
+    <div class="contact">
+        <div class="h-screen w-auto flex items-center justify-center mt-0">
+        <div class="flex flex-col md:flex-row gap-10 md:gap-50">
+            <div class="h-auto w-100 mt-30 lg:mt-10 "><img src="images/robo2.png"/></div>
+             <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg p-3">
+               <h1>Let's work Together</h1>
+               <form action="" onsubmit="sendMail()">
+                <label for="" class="text-gray-500 ">Your Name</label><br>
+                <input type="text" id="name" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Name" required/>
+                  <label for="" class="text-gray-500 ">Your Email</label><br>
+                <input type="text" id="email" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Email" id="email" required/>
+                <label for=""  class="text-gray-500">Service needed</label><br>
+                <select id="select" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:border-none focus:outline-none text-gray-500">
+                    <option>Something in mind</option>
+                    <option>Web Development</option>
+                    <option>Mobile application</option>
+                    <option>others</option>
+                </select>
+                  <label for="" class="text-gray-500 ">Explain Your idea</label><br>
+                <textarea id="message" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-20 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none " placeholder="Explain your idea.." required></textarea>
+                <button type="submit" onclick="sendMail()" class="text-white h-10 bg-[purple] w-full rounded-lg">Send Message</button>
+               </form>
+             </div>
+             </div>
+        </div>
+    </div>
+    <script>
+        //initialize emailjs with your public key
+       //collect form data
+        let nav=document.querySelector(".nav");
+        
+          function menu(){
+              console.log(nav);
+    nav.classList.toggle("open");
+   }
+       function sendMail(){
+       const Params={
+        name:document.getElementById("name").value,
+        email:document.getElementById("email").value,
+        select:document.getElementById("select").value,
+        message:document.getElementById("message").value
+       }
+       console.log(Params);
+       //send email using email.js
+       emailjs.send("service_dubmf7h","template_2yjppoi",Params,"Bk_m_oCLjiUKSPpiJ").then(alert("Email sent successfully"));
+    }
+    </script>
+</body>
+</html>
