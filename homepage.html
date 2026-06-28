@@ -86,10 +86,10 @@
           <div class="h-auto w-auto flex flex-col md:flex-row hidden md:flex -ml-12">
              <div class="h-15 w-30 m-2 rounded-lg hidden md:block "></div>
              <div class="h-15 w-50 bg-white m-3 rounded-lg flex flex-col items-center justify-center">
-            <div class="text-gray-500">View Projects</div>
+            <div onclick="window.location.href='http://127.0.0.1:5500/skills.html'" class="text-gray-500 cursor-pointer">View Skills</div>
           </div>
              <div class="h-15 w-50 bg-white m-3 rounded-lg flex flex-col items-center justify-center">
-            <div class="text-gray-500">Get in touch</div>
+            <div onclick="window.location.href='http://127.0.0.1:5500/contact.html'" class="text-gray-500 cursor-pointer">Get in touch</div>
           </div>
           <div class="h-15 w-30 m-2 rounded-lg hidden md:block"></div>
           </div>
@@ -175,20 +175,20 @@
             <div class="h-auto w-100 mt-30 lg:mt-10 "><img src="images/robo2.png"/></div>
              <div class="h-auto w-100 bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg p-3">
                <h1>Let's work Together</h1>
-               <form action="" onsubmit="sendMail()">
+               <form  action="https://formsubmit.co/tripathikanak789@gmail.com" method="POST">
                 <label for="" class="text-gray-500 ">Your Name</label><br>
-                <input type="text" id="name" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Name" required/>
+                <input type="text" name="name" id="name" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Name" required/>
                   <label for="" class="text-gray-500 ">Your Email</label><br>
-                <input type="text" id="email" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Email" id="email" required/>
+                <input type="text" name="email" id="email" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none p-3" placeholder="Your Email" id="email" required/>
                 <label for=""  class="text-gray-500">Service needed</label><br>
-                <select id="select" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:border-none focus:outline-none text-gray-500">
+                <select id="select" name="select" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-10 w-full focus:bg-white focus:border-none focus:outline-none text-gray-500">
                     <option>Something in mind</option>
                     <option>Web Development</option>
                     <option>Mobile application</option>
                     <option>others</option>
                 </select>
                   <label for="" class="text-gray-500 ">Explain Your idea</label><br>
-                <textarea id="message" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-20 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none " placeholder="Explain your idea.." required></textarea>
+                <textarea id="message" name="message" class="bg-[rgba(255,255,255,0.3)] border-3 border-white rounded-lg h-20 w-full focus:bg-white focus:text-black focus:border-none focus:outline-none " placeholder="Explain your idea.." required></textarea>
                 <button type="submit" onclick="sendMail()" class="text-white h-10 bg-[purple] w-full rounded-lg">Send Message</button>
                </form>
              </div>
